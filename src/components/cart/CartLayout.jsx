@@ -70,12 +70,12 @@ export default function CartLayout() {
                 />
               </svg>
             </div>
-            <div className="text-sm ml-1">
+            <div className="text-sm ml-1 ">
               This is a <span className="font-bold">carbon-neutral</span>{" "}
               deliver
             </div>
           </div>
-          <div className="flex justify-center bg-orange-600 py-4 rounded-full font-semibold text-white" onClick={handleCheckout}>
+          <div className="flex justify-center bg-orange-600 py-4 mt-4 rounded-full font-semibold text-white" onClick={handleCheckout}>
             Confirm Order
           </div>
           {modalActive && <Modal totalAmount={totalAmount} modalActive={modalActive}  setModalActive={setModalActive}/>}

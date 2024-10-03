@@ -40,7 +40,7 @@ export default function Desserts() {
     return (
       <DessertComp
         key={dessert.name}
-        image={dessert.image.thumbnail}
+        image={dessert.image}
         name={dessert.name}
         category={dessert.category}
         price={dessert.price}
@@ -55,14 +55,14 @@ export default function Desserts() {
   return (
     <div className="bg-orange-100">
       <div className="container max-w-screen-xl mx-auto">
-        <div className="py-16 grid grid-cols-4">
+        <div className="py-16 px-6 flex flex-col md:grid md:grid-cols-3 lg:grid-cols-4">
           <div className="col-span-3">
             <h1 className="text-3xl font-bold pb-8">Desserts</h1>
             <div className="w-full">
-              <div className="grid grid-cols-3">{dessertList}</div>
+              <div className="md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-3">{dessertList}</div>
             </div>
           </div>
-          <div className="col-span-1">
+          <div className=" md:col-span-3 lg:col-span-1 lg:pl-10">
             <CartLayout  />
           </div>
         </div>

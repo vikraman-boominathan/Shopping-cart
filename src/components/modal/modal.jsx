@@ -7,7 +7,7 @@ export default function Modal({ totalAmount, setModalActive, modalActive }) {
 
   return (
     <div className="w-full h-full fixed inset-0 flex items-center justify-center bg-white/50">
-      <div className="bg-white w-1/3 h-fit p-6  shadow-lg rounded-xl ">
+      <div className="bg-white max-w-fit h-fit p-6  shadow-lg rounded-xl ">
         <div className="pb-8 pt-2">
           <svg
             width="48"
