@@ -7,7 +7,7 @@ import { useCart } from "../cart/CartContext";
 
 export default function Desserts() {
   const { addToCart, removeFromCart } = useCart();
-  const [dessertStates, setDessertStates] = useState({}); // Object to track each dessert's state
+  const [dessertStates, setDessertStates] = useState({}); 
 
   const handleClick = (dessert) => {
     addToCart(dessert);
@@ -27,8 +27,8 @@ export default function Desserts() {
       return {
         ...prev,
         [dessert.name]: {
-          count: Math.max(0, currentCount - 1), // Decrease count without going negative
-          active: currentCount <= 1, // Set active to true if count is 0 after removal
+          count: Math.max(0, currentCount - 1), 
+          active: currentCount <= 1, 
         },
       };
     });
@@ -46,8 +46,8 @@ export default function Desserts() {
         price={dessert.price}
         count={count}
         active={active}
-        addCount={() => handleClick(dessert)} // Call with specific dessert
-        lessCount={() => handleRemove(dessert)} // Call with specific dessert
+        addCount={() => handleClick(dessert)} 
+        lessCount={() => handleRemove(dessert)} 
       />
     );
   });

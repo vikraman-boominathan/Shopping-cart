@@ -5,7 +5,7 @@ export default function DessertComp(props) {
 
     <div className="pb-5">
       <div className="flex flex-col relative ">
-        <img src={props.image} alt={props.name} className="w-56 rounded-md" />
+        <img src={`public/assets/images/${props.image}`} alt={props.name} className="w-56 rounded-md" />
         {props.active && props.count === 0 ? (
           <div
             className="flex absolute -bottom-3 left-[50px] bg-white rounded-full border border-red-400 px-4 py-1 text-sm"

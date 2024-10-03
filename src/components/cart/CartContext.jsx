@@ -1,4 +1,5 @@
 import React, { useState, useContext, createContext } from "react";
+import data from "../../data.json";
 
 const CartContext = createContext();
 
@@ -46,7 +47,7 @@ export const CartProvider = ({ children }) => {
 
   return (
     <div>
-      <CartContext.Provider value={{ cartItems, addToCart, removeFromCart }}>
+      <CartContext.Provider value={{ cartItems, addToCart, removeFromCart, data }}>
         {children}
       </CartContext.Provider>
     </div>
