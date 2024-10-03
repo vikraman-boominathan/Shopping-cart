@@ -17,7 +17,7 @@ export default function CartLayout() {
   console.log(totalAmount);
 
   return (
-    <div className="bg-white/40 p-4 rounded-md">
+    <div className="bg-white/40 p-4 rounded-md sticky top-2">
       <h1 className="text-xl text-orange-600 font-semibold max-h-fit">
         Your Cart
       </h1>
